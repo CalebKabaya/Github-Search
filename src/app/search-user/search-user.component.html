@@ -1,11 +1,11 @@
 <div class="container">
     <nav class="navbar navbar-dark">
         <div class="container-fluid">
-          <form  (ngSubmit)="searchGithubUser()" id="search-form" #f="ngForm" class="d-flex">
+          <form  (ngSubmit)="searchGithubUser()" id="search-form" #form="ngForm" class="d-flex">
             <input class="form-control me-2" type="search" ngModel name="search" #search="ngModel" placeholder="GitHub UserName" aria-label="Search">
              <p class="text-danger error-block" *ngIf="!search.valid && search.touched"><small>Fill in field!</small></p> 
 
-            <button class="btn btn-outline-success" type="submit" [disabled]="!f.valid">Search</button>
+            <button class="btn btn-outline-success" type="submit" [disabled]="!form.valid">Search</button>
           </form>
         </div>
       </nav>

@@ -24,7 +24,7 @@ export class SearchUserComponent implements OnInit {
      
 //    })
 //  }
-@ViewChild('f')
+@ViewChild('form')
  searchForm!: NgForm;
   ngOnInit(): void {
  }

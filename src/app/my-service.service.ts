@@ -92,7 +92,7 @@ export class MyServiceService {
           },
           (error) => {
             reject(error);
-            console.log(error);
+            console.log( 'errors',error);
           }
         )
     );
