@@ -28,12 +28,12 @@
 
                 </div>
                 <div class="col-md-6 mt-3" id="col-1">
-                        <p class="card-text" id="username">Name:<span> {{user?.name}}</span></p>
-                        <p>Username:<span> {{user?.login}}</span></p>
-                        <p>Joined on: <span class="bg-warning text-dark">{{user?.created_at|date}}</span></p>
+                        <p class="card-text" id="username"><b>Name: </b><span> {{user?.name}}</span></p>
+                        <p><b>UserName:</b><span> {{user?.login}}</span></p>
+                        <p><b>Joined on:</b> <span class="bg-warning text-dark">{{user?.created_at|date}}</span></p>
                         <div class="follow">
-                            <p><i class="fas fa-user"></i><span>{{user?.followers}}</span> Followers</p>
-                            <p><i class="fas fa-user"></i><span>{{user?.following}}</span> Following</p>
+                            <p><i class="fas fa-user"></i><span>{{user?.followers}}</span> <b>Followers</b></p>
+                            <p><i class="fas fa-user"></i><span>{{user?.following}}</span> <b>Following</b></p>
                         </div>
             </div>
         </div>
@@ -41,13 +41,13 @@
         <div class="col-md-6" id="first-row">
             <div class="card">
                 <ul class="list-group  my-details">
-                    <li class="list-group-item">Location: <span>{{user?.location}}</span></li>
-                    <li class="list-group-item">Public Repositories: <span class="badge rounded-pill bg-info text-dark">{{user?.public_repos}}</span></li>
+                    <li class="list-group-item"><b>Location:</b><span>{{user?.location}}</span></li>
+                    <li class="list-group-item"> <b>Public Repositories:</b><span class="badge rounded-pill bg-info text-dark">{{user?.public_repos}}</span></li>
                 </ul>
             </div>
             <div class="card">
                 <ul class="list-group">
-                    <li class="list-group-item">About me</li>
+                    <li class="list-group-item"><b>About me</b></li>
                     <li class="list-group-item">
                         <p>{{user?.bio}}</p>
                     </li>
@@ -55,7 +55,7 @@
             </div>
             <div class="card">
                 <ul class="list-group">
-                    <li class="list-group-item">Github</li>
+                    <li class="list-group-item"><b>Github</b></li>
                     <li class="list-group-item">
                         <div>
                             <small><a class="btn btn-sm" href="https://github.com/{{ user?.login }}"

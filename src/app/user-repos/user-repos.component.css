@@ -11,9 +11,10 @@ form {
     /* font-size: 40px; */
     width: 100%;
 }
-#giticon {
-    /* background-color: black; */
-}
+
 #card-content{
     border-style: outset;
+}
+.fa .fa-eye{
+    color: red;
 }
