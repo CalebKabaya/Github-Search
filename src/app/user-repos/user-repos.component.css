@@ -14,3 +14,6 @@ form {
 #giticon {
     /* background-color: black; */
 }
+#card-content{
+    border-style: outset;
+}

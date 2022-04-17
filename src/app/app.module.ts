@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
 import { UserReposComponent } from './user-repos/user-repos.component';
+import { MyModuleModule } from './my-module/my-module.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { UserReposComponent } from './user-repos/user-repos.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    MyModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,9 +17,16 @@ font-weight: bolder;
     justify-content: space-around;
     font-size: 23px;
     font-weight: bolder;
-    border-bottom: 20px;
-    border-bottom: brown;
+   
 }
 .fa{
     color: red;
+}
+.nav-item a{
+    border-bottom: 3px solid rgb(165, 133, 7);
+
+}
+.nav-item a:hover{
+    border-bottom: 3px solid rgb(148, 250, 6);
+
 }
