@@ -41,7 +41,9 @@ export class MyServiceService {
     }
 
     let userPromise = new Promise<void>((resolve, reject) =>
-    this.http.get<ApiUserResponse>(environment.apiUrl +'/' +gitUserName  +'?access_token=' +environment.apiKey)
+    this.http.get<ApiUserResponse>(environment.apiUrl +'/' +gitUserName  +'?access_token'+environment.apiKey)
+
+    // this.http.get<ApiUserResponse>(environment.apiUrl +'/' +gitUserName  +'?access_token=' +environment.apiKey)
       //  this.http.get('https://api.github.com/users/CalebKabaya?access_token=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')
 
         .toPromise().then(
