@@ -20,17 +20,17 @@
     <div class="row" *ngIf="DetailContainer">
         <div class="row">
 
-        <div class="col-md-6">
+        <div class="col-md-6" id="first-row">
             <div class="row">
 
                 <div class="col-md-6">
                     <img class="card-img-top" id="image" [src]="user?.avatar_url" alt="Image">
 
                 </div>
-                <div class="col-md-6">
-                        <p class="card-text">Name:<span> {{user?.name}}</span></p>
+                <div class="col-md-6 mt-3" id="col-1">
+                        <p class="card-text" id="username">Name:<span> {{user?.name}}</span></p>
                         <p>Username:<span> {{user?.login}}</span></p>
-                        <p>Joined on: <span class="badge rounded-pill bg-warning text-dark">{{user?.created_at|date}}</span></p>
+                        <p>Joined on: <span class="bg-warning text-dark">{{user?.created_at|date}}</span></p>
                         <div class="follow">
                             <p><i class="fas fa-user"></i><span>{{user?.followers}}</span> Followers</p>
                             <p><i class="fas fa-user"></i><span>{{user?.following}}</span> Following</p>
@@ -78,4 +78,6 @@
     </div>
 </div>
 </div>
-
+<div class="container mt-5">
+    <app-about></app-about>
+</div>
