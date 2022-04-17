@@ -11,6 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
 import { UserReposComponent } from './user-repos/user-repos.component';
 import { MyModuleModule } from './my-module/my-module.module';
+import { FooterComponent } from './footer/footer.component';
+import { DirectiveDirective } from './directive.directive';
+import { MypipePipe } from './mypipe.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { MyModuleModule } from './my-module/my-module.module';
     NavbarComponent,
     SearchUserComponent,
     AboutComponent,
-    UserReposComponent
+    UserReposComponent,
+    FooterComponent,
+    DirectiveDirective,
+    MypipePipe
   ],
   imports: [
     BrowserModule,
