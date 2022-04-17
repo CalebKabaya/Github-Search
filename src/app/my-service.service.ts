@@ -64,7 +64,7 @@ export class MyServiceService {
     return userPromise;
   }
   getUserRepos(gitUserName:string) {
-    interface ApiUserResponse {
+    interface ApiRepositoryResponse {
       login: string,
       avatar_url: string,
       html_url: string,
@@ -78,10 +78,10 @@ export class MyServiceService {
     }
 
     let repositoryPromise = new Promise<void>((resolve, reject) =>
-    this.http.get<ApiUserResponse>(environment.apiUrl +'/' +gitUserName  +'?access_token'+environment.apiKey)
-
-    // this.http.get<ApiUserResponse>(environment.apiUrl +'/' +gitUserName  +'?access_token=' +environment.apiKey)
-      //  this.http.get('https://api.github.com/users/CalebKabaya?access_token=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')
+    // this.http.get<ApiUserResponse>(environment.apiUrl +'/' +gitUserName  +'?access_token'+environment.apiKey)
+    // this.http.get('https://api.github.com/users/'+this.+'/repos?acess_token='+environment.apiKey)
+    // this.http.get<ApiRepositoryResponse>(environment.apiUrl +'/' +githubUsername + /repos?sort=created&direction=asc?access_token=' +environment.apiKey)
+    this.http.get<ApiRepositoryResponse>(environment.apiUrl +'/' +gitUserName +'/repos?sort=created&direction=asc?access_token=' +environment.apiKey)
 
         .toPromise().then(
           (response) => {
