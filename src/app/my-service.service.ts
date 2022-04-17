@@ -50,7 +50,6 @@ export class MyServiceService {
           (response) => {
             this.getUserDetails = response;
             resolve();
-            console.log('data',response);
 
             console.log('Search Data',response);
           },

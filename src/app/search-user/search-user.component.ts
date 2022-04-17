@@ -11,8 +11,8 @@ import { UserDetails } from '../user-details';
 export class SearchUserComponent implements OnInit {
  user!:UserDetails;
  searchText!:string;
- displayUserDetailContainer = true;
- displayGithubUserErrorNotFound = true;
+ DetailContainer = true;
+ Error = false;
 @Input()users!:string[]
  constructor(private userservice:MyServiceService) { }
  
@@ -33,12 +33,12 @@ export class SearchUserComponent implements OnInit {
    this.userservice.getUserDataApi(this.searchText).then(
      (response) => {
        this.user = this.userservice.getUserDetails;
-       this.displayUserDetailContainer = true;
+       this.DetailContainer = true;
 
      },
      (error) => {
        console.log(error);
-       this.displayGithubUserErrorNotFound = true;
+       this.Error = true;
      }
    );
  }
