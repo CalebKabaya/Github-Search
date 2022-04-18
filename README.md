@@ -1,27 +1,58 @@
-# GithubSearch
+# GitHub-Search 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+##### By Caleb Mutuku
+## Table of Content
 
-## Development server
++ [Description](#description)
++ [Installation Requirement](#Installation)
++ [Technology Used](#technology-used)
++ [Reference](#reference)
++ [Licence](#licence)
++ [Authors Info](#author-Info)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Description
+<p>This is a Search Tool where users enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories</p>
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Requirements
 
-## Build
+* Either a computer,phone,tablet or an Ipad
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* An access to the Internet
 
-## Running unit tests
+### Installation Process
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[Go Back to the top](#portfolio)
+## Technology Used
+* Angular-To develop the single-page application
 
-## Running end-to-end tests
+* HTML - which was used to build the structure of the pages.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* CSS - which was used to style the pages
 
-## Further help
+* Javascipt- to make the web more interactive
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Boostrap - for Responsiveness
+
+
+## Reference
+* Materialize CSS
+
+[Go Back to the top](#portfolio)
+
+## Licence
+
+[MIT](LICENSE)
+
+
+[Go Back to the top](#portfolio)
+
+## Authors Info
+Linked - Caleb Kabaya(hhttps://www.linkedin.com/in/caleb-kabaya-167676195/)
+
+Email - (calebkabaya7@gmail.com)
+
+[Go Back to the top](#portfolio)
+
