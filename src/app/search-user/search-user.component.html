@@ -30,7 +30,7 @@
                 <div class="col-md-6 mt-3" id="col-1">
                         <p class="card-text" id="username"><b>Name: </b><span> {{user?.name| uppercase}}</span></p>
                         <p><b>UserName:</b><span> {{user?.login}}</span></p>
-                        <p><b>Joined on:</b> <span class="bg-warning text-dark">{{user?.created_at|date}}</span></p>
+                        <p><b>Joined on:</b> <span class="bg-warning text-dark">{{user?.created_at|date:'EEEE, MMMM d, y'}} /{{user?.created_at|mypipe}} days ago</span></p>
                         <div class="follow">
                             <p><i class="fas fa-user"></i><span>{{user?.followers}}</span> <b>Followers</b></p>
                             <p><i class="fas fa-user"></i><span>{{user?.following}}</span> <b>Following</b></p>
@@ -47,7 +47,7 @@
             </div>
             <div class="card">
                 <ul class="list-group">
-                    <li  appDirective class="list-group-item"><b>About me</b></li>
+                    <li class="list-group-item"><b>About me</b></li>
                     <li class="list-group-item">
                         <p>{{user?.bio}}</p>
                     </li>
@@ -58,7 +58,7 @@
                     <li class="list-group-item"><b>Github Account Link</b><i class="fa fa-arrow-down" aria-hidden="true"></i></li>
                     <li class="list-group-item">
                         <div appDirective> 
-                            <small><a class="btn btn-sm" href="https://github.com/{{ user?.login }}"
+                            <small><a class="btn btn-sm text-white" href="https://github.com/{{ user?.login }}"
                                 target="_blank" rel="noopener noreferrer">Click To View Account On GitHub <i class="fa fa-arrow-right"></i></a></small>
                         </div>
                     </li>

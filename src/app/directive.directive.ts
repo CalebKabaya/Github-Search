@@ -6,7 +6,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 export class DirectiveDirective {
 
   constructor(private elem:ElementRef) { 
-    this.elem.nativeElement.style.backgroundcolor='blue';
+    elem.nativeElement.style.background = '#11444B';
     
 
   }
